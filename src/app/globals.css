@@ -1,0 +1,131 @@
+/* Version: 2.0.3 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shadcn/ui theme */
+@layer base {
+  :root {
+    --background: 297 20 76;
+    --foreground: 297 21 12;
+    --card: 297 20 76;
+    --card-foreground: 297 21 12;
+    --popover: 297 20 76;
+    --popover-foreground: 297 21 12;
+    --primary: 297 14 29;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 297 16 65;
+    --secondary-foreground: 297 21 12;
+    --muted: 297 20 76;
+    --muted-foreground: 297 13 54;
+    --accent: 297 38 69;
+    --accent-foreground: 297 21 12;
+    --destructive: 0 81 36;
+    --destructive-foreground: 0 0% 98%;
+    --border: 297 14 29;
+    --input: 297 14 29;
+    --ring: 297 14 29;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 297 18 24;
+    --foreground: 297 0% 100%;
+    --card: 297 14 29;
+    --card-foreground: 297 0 100;
+    --popover: 297 18% 22%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 297 10% 41%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 297 14 38;
+    --secondary-foreground: 297 0% 100%;
+    --muted: 297 16 15;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 297 15 9;
+    --accent-foreground: 297 0 98;
+    --destructive: 0 81 36;
+    --destructive-foreground: 0 0% 98%;
+    --border: 297 14 14;
+    --input: 297 14 14;
+    --ring: 297 14 14;
+    --radius: 0.5rem;
+  }
+
+  div.preview * {
+    @apply !transition-none;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer base {
+  :root {
+    @apply text-[100%];
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  ::-webkit-scrollbar {
+    @apply h-1.5 w-1.5;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-primary/5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-primary/25 hover:bg-primary/50;
+  }
+
+  /* Typography */
+  h1 {
+    @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  }
+
+  h2 {
+    @apply scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0;
+  }
+
+  h3 {
+    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  }
+
+  h4 {
+    @apply scroll-m-20 text-xl font-semibold tracking-tight;
+  }
+
+  .paragraph {
+    @apply leading-7 [&:not(:first-child)]:mt-6;
+  }
+
+  blockquote {
+    @apply mt-6 border-l-2 pl-6 italic;
+  }
+
+  ul {
+    @apply my-6 ml-6 list-disc [&>li]:mt-2;
+  }
+
+  .lead {
+    @apply text-xl text-muted-foreground;
+  }
+
+  .large {
+    @apply text-lg font-semibold;
+  }
+
+  .muted {
+    @apply text-sm text-muted-foreground;
+  }
+
+  small {
+    @apply text-sm font-medium leading-none;
+  }
+}
