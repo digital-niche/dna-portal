@@ -50,7 +50,7 @@ const config: z.input<typeof Schema_Config> = {
      * You need to create a new folder and share it with the service account
      * Then, copy the folder id and paste it here
      */
-    rootFolder: "f3662fc30a1f75e3b78499470d8462138828dd9ec0ca716e20466bef0b16889c0d6427d99186b0ead99823667d6ed69d",
+    rootFolder: "eb95c32ad0c280fa5db60c58b327e0ab12c5f8b448a2e1a3454cf5546cb3daebb3717390b8d39cdfe3cbb7480ead4336",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -66,7 +66,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then you need to encrypt it using `/api/internal/encrypt?q=:shared_drive_id` route
      */
     isTeamDrive: true,
-    sharedDrive: "0dfdc0d62f1a2c2258c9b13aa35302502b7b69153708675a6bb2cceb6b7bff63",
+    sharedDrive: "c40a3ef9a990e355ab115fa5601508156635536c5cbbca0285c187928e3c46e0",
 
     defaultQuery: [
       "trashed = false",
@@ -99,7 +99,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: true
      */
-    proxyThumbnail: false,
+    proxyThumbnail: true,
 
     /**
      * Special file name that will be used for certain purposes
@@ -247,7 +247,7 @@ const config: z.input<typeof Schema_Config> = {
      */
     footer: [
       "{{ siteName }} *v{{ version }}* @ {{ repository }}",
-      "{{ year }} - Made with ❤️ by **{{ author }}**",
+      "{{ year }} - **{{ author }}**",
     ],
 
     /**
