@@ -99,7 +99,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: true
      */
-    proxyThumbnail: false,
+    proxyThumbnail: true,
 
     /**
      * Special file name that will be used for certain purposes
