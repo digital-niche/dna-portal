@@ -31,7 +31,7 @@ const config: z.input<typeof Schema_Config> = {
    *
    * @default false
    */
-  showDeployGuide: true,
+  showDeployGuide: false,
 
   /**
    * How long the cache will be stored in the browser
@@ -50,7 +50,7 @@ const config: z.input<typeof Schema_Config> = {
      * You need to create a new folder and share it with the service account
      * Then, copy the folder id and paste it here
      */
-    rootFolder: "58d7a3d35c34fbddb90021b35a6d8ecf7944b4b156c54b3fa3347c8412618d729c55c6479ab5128f4f7ee7d97da41440",
+    rootFolder: "f3662fc30a1f75e3b78499470d8462138828dd9ec0ca716e20466bef0b16889c0d6427d99186b0ead99823667d6ed69d",
 
     /**
      * If your rootfolder inside a shared drive, you NEED to set this to true
@@ -66,7 +66,7 @@ const config: z.input<typeof Schema_Config> = {
      * Then you need to encrypt it using `/api/internal/encrypt?q=:shared_drive_id` route
      */
     isTeamDrive: true,
-    sharedDrive: "d34b0790ab733c8fc6779c6e6bb53cbb118f50a517a2c48aab40ca9f061d7fcd",
+    sharedDrive: "0dfdc0d62f1a2c2258c9b13aa35302502b7b69153708675a6bb2cceb6b7bff63",
 
     defaultQuery: [
       "trashed = false",
@@ -153,7 +153,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: 6 hours
      */
-    temporaryTokenDuration: 6,
+    temporaryTokenDuration: 59,
 
     /**
      * Maximum file size that can be downloaded via api routes
@@ -166,7 +166,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: 4MB
      */
-    maxFileSize: 10485760,
+    maxFileSize: 419430400,
 
     /**
      * Only show preview for files that are smaller than this size
@@ -195,7 +195,7 @@ const config: z.input<typeof Schema_Config> = {
      */
     siteName: "DNA Distribution Portal",
     siteNameTemplate: "%s - %t",
-    siteDescription: "Client Images & Files",
+    siteDescription: "Client Files, Images & Resources",
 
     /**
      * Site Icon will be used on navbar
@@ -227,7 +227,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: false
      */
-    showFileExtension: true,
+    showFileExtension: false,
 
     /**
      * Footer content
@@ -247,7 +247,7 @@ const config: z.input<typeof Schema_Config> = {
      */
     footer: [
       "{{ siteName }} *v{{ version }}* @ {{ repository }}",
-      "{{ year }} - **{{ author }}**",
+      "{{ year }} - Made with ❤️ by **{{ author }}**",
     ],
 
     /**
