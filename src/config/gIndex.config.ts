@@ -31,7 +31,7 @@ const config: z.input<typeof Schema_Config> = {
    *
    * @default false
    */
-  showDeployGuide: false,
+  showDeployGuide: true,
 
   /**
    * How long the cache will be stored in the browser
@@ -98,7 +98,7 @@ const config: z.input<typeof Schema_Config> = {
      *
      * @default: true
      */
-    proxyThumbnail: true,
+    proxyThumbnail: false,
 
     /**
      * Special file name that will be used for certain purposes
