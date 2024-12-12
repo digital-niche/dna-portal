@@ -18,7 +18,7 @@ type Props = {
   file: z.infer<typeof Schema_File>;
 };
 export default function PreviewImage({ file }: Props) {
-  const [imgSrc, setImgSrc] = useState<string>(`/api/thumb/${file.encryptedId}?size=4`);
+  const [imgSrc, setImgSrc] = useState<string>(`/api/thumb/${file.encryptedId}?size=1000`);
   const [imgLoaded, setImgLoaded] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
 
